@@ -2,7 +2,7 @@
 
 ## 1. Temel Yapı ve Konfigürasyon
 - [x] Tailwind tema renklerini tanımlama
-- [ ] Font ailesini belirleme ve yükleme
+- [x] Font ailesini belirleme ve yükleme
 - [ ] Genel layout yapısını oluşturma
 - [ ] Responsive breakpoint'leri belirleme
 
