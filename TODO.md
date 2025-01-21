@@ -26,7 +26,6 @@
 - [ ] Bildirim dropdown
 - [ ] İstatistik kartları
 - [ ] Tablo bileşeni
-- [ ] Button çeşitleri
 - [x] İkon sistemi entegrasyonu
 
 ## 4. Veri Görselleştirme
@@ -68,4 +67,17 @@
 - [ ] Multi-language desteği
 - [ ] Dark/Light mode
 - [ ] Export fonksiyonalitesi
-- [ ] Filtre sistemi 
+- [ ] Filtre sistemi
+
+## Sidebar Container
+- [ ] Sidebar tasarımını Figma tasarımına uygun olarak güncelle
+- [ ] "Add to Chrome" butonunda eksik olan Chrome ikonunu ekle
+- [ ] Salepol logosunu SVG olarak oluştur ve implemente et
+- [ ] Logo'ya tıklandığında anasayfaya yönlendirme özelliği ekle
+- [ ] Sidebar menu itemlarının aktif state'lerini düzenle (hover, active, focus states)
+
+## Header Container
+- [ ] Header container yapısı oluşturulacak
+
+## Content Container
+- [ ] Content container yapısı oluşturulacak 
