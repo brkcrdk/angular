@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { NgFor } from '@angular/common';
+import { LucideAngularModule, icons } from 'lucide-angular';
 
 interface MenuItem {
   title: string;
-  icon: string;
+  icon: keyof typeof icons;
   link: string;
   isActive?: boolean;
 }
@@ -17,7 +18,7 @@ interface MenuGroup {
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, CommonModule],
+  imports: [RouterLink, RouterLinkActive, NgFor, LucideAngularModule],
   templateUrl: './sidebar.component.html',
 })
 export class SidebarComponent {
@@ -27,24 +28,24 @@ export class SidebarComponent {
       items: [
         {
           title: 'Dashboard',
-          icon: 'lucide-layout-grid',
+          icon: 'LayoutGrid',
           link: '/dashboard',
           isActive: true,
         },
-        { title: 'Analytics', icon: 'lucide-line-chart', link: '/analytics' },
+        { title: 'Analytics', icon: 'TrendingUp', link: '/analytics' },
         {
           title: 'Shop Analyzer',
-          icon: 'lucide-shopping-cart',
+          icon: 'ShoppingCart',
           link: '/shop-analyzer',
         },
         {
           title: 'Sales Report',
-          icon: 'lucide-file-text',
+          icon: 'FileText',
           link: '/sales-report',
         },
         {
           title: 'Transactions',
-          icon: 'lucide-refresh-ccw',
+          icon: 'RefreshCcw',
           link: '/transactions',
         },
       ],
@@ -52,16 +53,20 @@ export class SidebarComponent {
     {
       title: 'OTHER TOOLS',
       items: [
-        { title: 'Extensions', icon: 'lucide-puzzle', link: '/extensions' },
-        { title: 'Affiliate Program', icon: 'lucide-link', link: '/affiliate' },
-        { title: 'Upgrade', icon: 'lucide-star', link: '/upgrade' },
+        { title: 'Extensions', icon: 'Puzzle', link: '/extensions' },
+        {
+          title: 'Affiliate Program',
+          icon: 'Link2',
+          link: '/affiliate',
+        },
+        { title: 'Upgrade', icon: 'Star', link: '/upgrade' },
       ],
     },
     {
       title: 'SUPPORT',
       items: [
-        { title: 'Settings', icon: 'lucide-settings', link: '/settings' },
-        { title: 'Help Center', icon: 'lucide-help-circle', link: '/help' },
+        { title: 'Settings', icon: 'Settings', link: '/settings' },
+        { title: 'CircleHelp', icon: 'CircleHelp', link: '/help' },
       ],
     },
   ];

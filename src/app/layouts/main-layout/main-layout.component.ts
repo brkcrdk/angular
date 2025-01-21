@@ -7,7 +7,6 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
   standalone: true,
   imports: [RouterOutlet, SidebarComponent],
   templateUrl: './main-layout.component.html',
-  styleUrl: './main-layout.component.css',
 })
 export class MainLayoutComponent {
   // Layout ile ilgili state'ler buraya gelecek
