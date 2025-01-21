@@ -1,23 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import {
-  LayoutGrid,
-  LineChart,
-  ShoppingCart,
-  FileText,
-  RefreshCcw,
-  Puzzle,
-  Link2,
-  Star,
-  Settings,
-  HelpCircle,
-  Chrome,
-} from 'lucide-angular';
 
 interface MenuItem {
   title: string;
-  icon: any; // Lucide icon component
+  icon: string;
   link: string;
   isActive?: boolean;
 }
@@ -30,24 +17,8 @@ interface MenuGroup {
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [
-    RouterLink,
-    RouterLinkActive,
-    CommonModule,
-    LayoutGrid,
-    LineChart,
-    ShoppingCart,
-    FileText,
-    RefreshCcw,
-    Puzzle,
-    Link2,
-    Star,
-    Settings,
-    HelpCircle,
-    Chrome,
-  ],
+  imports: [RouterLink, RouterLinkActive, CommonModule],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
   menuGroups: MenuGroup[] = [
@@ -56,29 +27,41 @@ export class SidebarComponent {
       items: [
         {
           title: 'Dashboard',
-          icon: LayoutGrid,
+          icon: 'lucide-layout-grid',
           link: '/dashboard',
           isActive: true,
         },
-        { title: 'Analytics', icon: LineChart, link: '/analytics' },
-        { title: 'Shop Analyzer', icon: ShoppingCart, link: '/shop-analyzer' },
-        { title: 'Sales Report', icon: FileText, link: '/sales-report' },
-        { title: 'Transactions', icon: RefreshCcw, link: '/transactions' },
+        { title: 'Analytics', icon: 'lucide-line-chart', link: '/analytics' },
+        {
+          title: 'Shop Analyzer',
+          icon: 'lucide-shopping-cart',
+          link: '/shop-analyzer',
+        },
+        {
+          title: 'Sales Report',
+          icon: 'lucide-file-text',
+          link: '/sales-report',
+        },
+        {
+          title: 'Transactions',
+          icon: 'lucide-refresh-ccw',
+          link: '/transactions',
+        },
       ],
     },
     {
       title: 'OTHER TOOLS',
       items: [
-        { title: 'Extensions', icon: Puzzle, link: '/extensions' },
-        { title: 'Affiliate Program', icon: Link2, link: '/affiliate' },
-        { title: 'Upgrade', icon: Star, link: '/upgrade' },
+        { title: 'Extensions', icon: 'lucide-puzzle', link: '/extensions' },
+        { title: 'Affiliate Program', icon: 'lucide-link', link: '/affiliate' },
+        { title: 'Upgrade', icon: 'lucide-star', link: '/upgrade' },
       ],
     },
     {
       title: 'SUPPORT',
       items: [
-        { title: 'Settings', icon: Settings, link: '/settings' },
-        { title: 'Help Center', icon: HelpCircle, link: '/help' },
+        { title: 'Settings', icon: 'lucide-settings', link: '/settings' },
+        { title: 'Help Center', icon: 'lucide-help-circle', link: '/help' },
       ],
     },
   ];
