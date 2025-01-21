@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NgFor } from '@angular/common';
-import { LucideAngularModule, icons } from 'lucide-angular';
 
 interface MenuItem {
   title: string;
-  icon: keyof typeof icons;
+  icon: string;
   link: string;
   isActive?: boolean;
 }
@@ -18,7 +17,7 @@ interface MenuGroup {
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, NgFor, LucideAngularModule],
+  imports: [RouterLink, RouterLinkActive, NgFor],
   templateUrl: './sidebar.component.html',
 })
 export class SidebarComponent {
@@ -28,24 +27,24 @@ export class SidebarComponent {
       items: [
         {
           title: 'Dashboard',
-          icon: 'LayoutGrid',
+          icon: 'pi pi-th-large',
           link: '/dashboard',
           isActive: true,
         },
-        { title: 'Analytics', icon: 'TrendingUp', link: '/analytics' },
+        { title: 'Analytics', icon: 'pi pi-chart-line', link: '/analytics' },
         {
           title: 'Shop Analyzer',
-          icon: 'ShoppingCart',
+          icon: 'pi pi-shopping-cart',
           link: '/shop-analyzer',
         },
         {
           title: 'Sales Report',
-          icon: 'FileText',
+          icon: 'pi pi-file',
           link: '/sales-report',
         },
         {
           title: 'Transactions',
-          icon: 'RefreshCcw',
+          icon: 'pi pi-sync',
           link: '/transactions',
         },
       ],
@@ -53,20 +52,20 @@ export class SidebarComponent {
     {
       title: 'OTHER TOOLS',
       items: [
-        { title: 'Extensions', icon: 'Puzzle', link: '/extensions' },
+        { title: 'Extensions', icon: 'pi pi-box', link: '/extensions' },
         {
           title: 'Affiliate Program',
-          icon: 'Link2',
+          icon: 'pi pi-link',
           link: '/affiliate',
         },
-        { title: 'Upgrade', icon: 'Star', link: '/upgrade' },
+        { title: 'Upgrade', icon: 'pi pi-star', link: '/upgrade' },
       ],
     },
     {
       title: 'SUPPORT',
       items: [
-        { title: 'Settings', icon: 'Settings', link: '/settings' },
-        { title: 'CircleHelp', icon: 'CircleHelp', link: '/help' },
+        { title: 'Settings', icon: 'pi pi-cog', link: '/settings' },
+        { title: 'Help Center', icon: 'pi pi-question-circle', link: '/help' },
       ],
     },
   ];
