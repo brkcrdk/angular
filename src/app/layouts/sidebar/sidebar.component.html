@@ -21,8 +21,9 @@
            [class.bg-primary-light]="item.isActive"
            class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-secondary-light transition-colors">
           <div class="w-5 h-5 flex items-center justify-center">
-            <!-- İkon placeholder -->
-            <div class="w-full h-full rounded-md" [class.bg-primary]="item.isActive"></div>
+            <component [ngComponentOutlet]="item.icon" 
+                      class="w-[18px] h-[18px]"
+                      [class.text-primary]="item.isActive" />
           </div>
           {{ item.title }}
         </a>
@@ -33,10 +34,7 @@
   <!-- Chrome Extension Button -->
   <div class="p-4 mt-auto">
     <button class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-secondary-light rounded-lg text-sm font-medium hover:bg-secondary transition-colors">
-      <span class="w-5 h-5 flex items-center justify-center">
-        <!-- Chrome icon placeholder -->
-        <div class="w-4 h-4 rounded-full bg-text-light"></div>
-      </span>
+      <chrome-icon class="w-4 h-4 text-text-light" />
       Add to Chrome, It's Free
     </button>
   </div>

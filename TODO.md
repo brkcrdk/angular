@@ -6,7 +6,7 @@
 - [ ] Genel layout yapısını oluşturma
   - [x] Layout component oluşturma
   - [x] Layout routing yapılandırması
-  - [ ] Sidebar container yapısı
+  - [x] Sidebar container yapısı
   - [x] Main content container yapısı
   - [ ] Header container yapısı
   - [ ] Grid sisteminin kurulması
@@ -14,20 +14,20 @@
 - [ ] Responsive breakpoint'leri belirleme
 
 ## 2. Layout Bileşenleri
-- [ ] Sidebar component
+- [x] Sidebar component
 - [ ] Header component (arama, profil, bildirimler)
 - [ ] Main layout wrapper
 - [ ] Responsive sidebar toggle
 
 ## 3. Temel UI Bileşenleri
-- [ ] Logo bileşeni
+- [x] Logo bileşeni
 - [ ] Arama çubuğu
 - [ ] Profil dropdown
 - [ ] Bildirim dropdown
 - [ ] İstatistik kartları
 - [ ] Tablo bileşeni
 - [ ] Button çeşitleri
-- [ ] İkon sistemi entegrasyonu
+- [x] İkon sistemi entegrasyonu
 
 ## 4. Veri Görselleştirme
 - [ ] Grafik kütüphanesi seçimi ve kurulumu
