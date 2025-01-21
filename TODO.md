@@ -1,7 +1,7 @@
 # Salepol Dashboard TODO List
 
 ## 1. Temel Yapı ve Konfigürasyon
-- [ ] Tailwind tema renklerini tanımlama
+- [x] Tailwind tema renklerini tanımlama
 - [ ] Font ailesini belirleme ve yükleme
 - [ ] Genel layout yapısını oluşturma
 - [ ] Responsive breakpoint'leri belirleme
