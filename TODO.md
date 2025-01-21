@@ -4,10 +4,10 @@
 - [x] Tailwind tema renklerini tanımlama
 - [x] Font ailesini belirleme ve yükleme
 - [ ] Genel layout yapısını oluşturma
-  - [ ] Layout component oluşturma
-  - [ ] Layout routing yapılandırması
+  - [x] Layout component oluşturma
+  - [x] Layout routing yapılandırması
   - [ ] Sidebar container yapısı
-  - [ ] Main content container yapısı
+  - [x] Main content container yapısı
   - [ ] Header container yapısı
   - [ ] Grid sisteminin kurulması
   - [ ] Responsive yapının temellerinin atılması
